@@ -1,0 +1,132 @@
+.taskStepperWrapper {
+  display: flex;
+}
+
+.taskListWrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
+  min-width: max-content;
+  max-width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px 20px 40px 20px;
+  border-right: 2px solid #dee2e6;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.taskListHeader {
+  color: black;
+}
+
+.task {  
+  cursor: pointer;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #495057;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.1s, box-shadow 0.1s;
+}
+
+.task:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task.active {
+  background-color: #339af0;
+  color: white;
+  box-shadow: 0 2px 8px rgba(51, 154, 240, 0.5);
+}
+
+.stepperWrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;    
+  width: 100%;
+}
+
+.progressTrackerWrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: max-content;
+}
+
+.stepWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stepDetails {
+  display: flex;
+  column-gap: 24px;    
+  width: 75%;
+  align-self: center;    
+  text-align: left;
+}
+
+.stepImage {
+  width: 250px;
+  border-radius: 24px;
+}
+
+.progressStepper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f1f3f5;
+  border: 2px solid #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #868e96;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.step.active .step-circle {
+  background-color: #339af0;
+  border-color: #339af0;
+  color: white;
+}
+
+.step.completed .step-circle {
+  background-color: #51cf66;
+  border-color: #51cf66;
+  color: white;
+}
+
+.step-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.step.disabled .step-circle {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  color: #ced4da;
+}
