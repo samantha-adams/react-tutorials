@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import TaskStepper from './task-stepper/TaskStepper';
 
