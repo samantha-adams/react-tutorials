@@ -18,4 +18,5 @@ This project involves the following concepts:
 ## Demo
 
 See task-stepper-demo files for an example of a completed implementation.
-![Task Stepper Demo](../task-stepper-demo/demo-img.png)
+
+![Task Stepper Demo GIF](../task-stepper-demo/demo-gif.gif)
