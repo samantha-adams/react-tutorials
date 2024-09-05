@@ -1,5 +1,5 @@
 import './App.css';
-import TaskStepper from './task-stepper/TaskStepper';
+import TaskStepper from './task-stepper-demo/TaskStepper';
 
 function App() {
   return (

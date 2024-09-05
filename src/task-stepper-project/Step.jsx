@@ -9,11 +9,11 @@ const Step = (props) => {
   
   return (
     <div className="stepWrapper">
-      <h2>{currentStep.stepName}</h2>
+      <h2>{/* TODO: Display the current step's name (stepName) */}</h2>
       <div className="stepDetails">
         <p>{currentStep.stepDetails}</p>
         {currentStep.stepImageSrc && (
-            <img className="stepImage" src={currentStep.stepImageSrc} />
+          /* TODO: Display the current step's image (stepImageSrc) using an <img> tag with the className "stepImage" */
         )}
       </div>
     </div>
