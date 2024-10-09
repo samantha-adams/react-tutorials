@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './TaskStepper.css';
+import './TaskStepper.css';
 import TaskList from './TaskList';
 import Stepper from './Stepper';
 

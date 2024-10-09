@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './TaskStepper.css';
+import { Flex } from '@mantine/core';
 import TaskList from './TaskList';
 import Stepper from './Stepper';
 
@@ -7,10 +7,10 @@ const TaskStepper = () => {
   const [currentTaskName, setCurrentTaskName] = useState(null);
 
   return (
-    <div className="taskStepperWrapper">
+    <Flex>
       <TaskList currentTaskName={currentTaskName} setCurrentTaskName={setCurrentTaskName} />
       <Stepper currentTaskName={currentTaskName} />
-    </div>
+    </Flex>
   );
 }
 

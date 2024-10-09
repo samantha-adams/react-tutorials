@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react';
 import Step from './Step.jsx';
-import ProgressTracker from './ProgressTracker.jsx';
-import './TaskStepper.css';
+import taskList from './tasks.json';
+import { Stepper as MantineStepper } from '@mantine/core';
 
 const Stepper = (props) => {
   const { currentTaskName } = props;
+  
   const savedProgress = JSON.parse(localStorage.getItem('progress'));
   const currentTaskProgress = savedProgress?.[currentTaskName] || {};
-  const savedStepNum = currentTaskProgress.currentStepNum || 0;
-
+  const currentTask = taskList.find((task) => task.taskName === currentTaskName);
+  const currentTaskSteps = currentTask?.steps || [];
+  
+  const savedStepNum = currentTaskProgress.currentStepNum || 1;
   const [currentStepNum, setCurrentStepNum] = useState(savedStepNum);
+  
+  const currentStep = currentTaskSteps[currentStepNum] || {};
 
   useEffect(() => {
     if (currentTaskName) {
@@ -35,14 +40,17 @@ const Stepper = (props) => {
   }, [currentStepNum]);
   
   return (
-    <div className="stepperWrapper">
-      <ProgressTracker 
-        currentTaskName={currentTaskName} 
-        currentStepNum={currentStepNum} 
-        setCurrentStepNum={setCurrentStepNum} 
-      />
-      <Step currentTaskName={currentTaskName} currentStepNum={currentStepNum} />
-    </div>
+    <MantineStepper color="teal" active={currentStepNum} size="lg" onStepClick={setCurrentStepNum}>
+      {currentTaskSteps.map(({ stepName }, index) => (
+        <MantineStepper.Step 
+          label={`Step ${index+1}`} 
+          description={stepName} 
+          key={stepName}
+        >
+          <Step currentStep={currentStep} />
+        </MantineStepper.Step>
+      ))}
+    </MantineStepper>
   );
 }
 

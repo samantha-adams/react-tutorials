@@ -1,0 +1,82 @@
+[
+  {
+    "taskName": "Make a smoothie",
+    "steps": [
+      {
+        "stepName": "Gather Ingredients",
+        "stepDetails": "Collect all the necessary ingredients, such as fruits, yogurt, milk, and any additional flavorings or sweeteners.",
+        "stepImageSrc": "https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature_thumb.jpg?sfvrsn=7abe71fe_4"
+      },
+      {
+        "stepName": "Prepare Ingredients",
+        "stepDetails": "Wash and chop the fruits into small pieces. Measure out any other ingredients like yogurt or milk.",
+        "stepImageSrc": "https://blog2.halegroves.com/wp-content/uploads/2022/01/citrus-cutting-board.jpg"
+      },
+      {
+        "stepName": "Blend Ingredients",
+        "stepDetails": "Place all the prepared ingredients into a blender. Blend on high until the mixture is smooth and creamy.",
+        "stepImageSrc": "https://png.pngtree.com/png-vector/20240207/ourlarge/pngtree-blender-juicing-fruit-png-image_11672639.png"
+      },
+      {
+        "stepName": "Serve Smoothie",
+        "stepDetails": "Pour the smoothie into a glass. You can add garnishes like fruit slices or a sprinkle of chia seeds if desired.",
+        "stepImageSrc": "https://detoxinista.com/wp-content/uploads/2023/07/strawberry-mango-smoothie-in-glass.jpg"
+      }
+    ]
+  },
+  {
+    "taskName": "Make a sandwich",
+    "steps": [
+      {
+        "stepName": "Gather Ingredients",
+        "stepDetails": "Collect all the ingredients you need, including bread, meat, cheese, vegetables, and condiments.",
+        "stepImageSrc": "https://www.daringgourmet.com/wp-content/uploads/2013/07/Tomato-Herb-Bread-2-sm1.jpg"
+      },
+      {
+        "stepName": "Prepare Vegetables",
+        "stepDetails": "Wash and slice the vegetables like lettuce, tomato, and onion.",
+        "stepImageSrc": "https://www.shanzuchef.com/cdn/shop/articles/cut_a_tomato_with_shan_zu_classic_fruit_knife.jpg?v=1640246867"
+      },
+      {
+        "stepName": "Assemble Sandwich",
+        "stepDetails": "Lay out slices of bread. Add layers of meat, cheese, and prepared vegetables. Spread condiments as desired.",
+        "stepImageSrc": "https://cdn.shopify.com/s/files/1/0545/5141/2927/files/IMG_7372.jpg"
+      },
+      {
+        "stepName": "Cut and Serve",
+        "stepDetails": "Cut the sandwich into halves or quarters for easier eating. Serve immediately or wrap it up for later.",
+        "stepImageSrc": "https://tornadoughalli.com/wp-content/uploads/2022/05/CLUB-SANDWICH-RECIPE-3-2-500x375.jpg"
+      }
+    ]
+  },  
+  {
+    "taskName": "Get ready for work",
+    "steps": [
+      {
+        "stepName": "Wake Up",
+        "stepDetails": "Set an alarm and wake up early to give yourself enough time to get ready without rushing.",
+        "stepImageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7MncrmUk7NOtkpmRVfZSDxc0p_Z0xldlGg&s"
+      },
+      {
+        "stepName": "Shower and Groom",
+        "stepDetails": "Take a shower, brush your teeth, and complete any grooming tasks like shaving or styling your hair.",
+        "stepImageSrc": "https://cdn.prod.website-files.com/5fadeb38b6167d36aedcc091/60b7d52ee6e709324e1fce48_showerhead.jpg"
+      },
+      {
+        "stepName": "Get Dressed",
+        "stepDetails": "Choose an outfit appropriate for work. Consider checking the weather or the day's events when selecting your clothes.",
+        "stepImageSrc": "https://mobileimages.lowes.com/productimages/fae4447c-bb2b-4a46-8b0e-aacd000487d9/10917589.jpg"
+      },
+      {
+        "stepName": "Prepare Your Work Bag",
+        "stepDetails": "Pack any items you need for the day, such as your laptop, documents, lunch, and personal belongings.",
+        "stepImageSrc": "https://sm.pcmag.com/pcmag_uk/gallery/t/the-best-l/the-best-laptop-backpacks-for-2020_gdft.jpg"
+      },
+      {
+        "stepName": "Eat Breakfast",
+        "stepDetails": "Have a healthy breakfast before you leave for work, such as a smoothie, sandwich, or oatmeal.",
+        "stepImageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESGfyHJmKOf713JLP0QcTLvPkNHcLHUPUhw&s"
+      }
+    ]
+  }
+]
