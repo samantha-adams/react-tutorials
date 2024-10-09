@@ -1,4 +1,4 @@
-import styles from './TaskStepper.css';
+import './TaskStepper.css';
 import taskList from './tasks.json';
 
 const TaskList = (props) => {

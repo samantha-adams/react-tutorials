@@ -1,22 +1,25 @@
-import './TaskStepper.css';
+import { Title } from '@mantine/core';
+import { Button, Stack } from '@mantine/core';
+
 import taskList from './tasks.json';
 
 const TaskList = (props) => {
   const { currentTaskName, setCurrentTaskName } = props;
 
   return (
-    <div className="taskListWrapper">
-      <h1 className="taskListHeader">Tasks</h1>
+    <Stack gap="lg">
+      <Title order={1}>Tasks</Title>
       {taskList.map((task) => (
-        <div 
-          className={currentTaskName === task.taskName ? "task active" : "task"}
+        <Button 
+          color="gray"
+          variant={currentTaskName === task.taskName ? "outline" : "filled"}
           key={task.taskName}
           onClick={() => setCurrentTaskName(task.taskName)}
         >
           {task.taskName}
-        </div>
+        </Button>
       ))}
-    </div>
+    </Stack>
   )
 }
 

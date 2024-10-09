@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Step from './Step.jsx';
 import ProgressTracker from './ProgressTracker.jsx';
-import styles from './TaskStepper.css';
+import './TaskStepper.css';
 
 const Stepper = (props) => {
   /* TODO extract the variable "currentTaskName" from props */
